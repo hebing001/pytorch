@@ -17,4 +17,16 @@ ax.spines['bottom'].set_position(('data', 0))
 ax.yaxis.set_ticks_position('left')
 ax.spines['left'].set_position(('data', 0))
 
+x0 = 1
+y0 = 2*x0 + 1
+plt.scatter([x0, ], [y0, ], s=50, color='r')
+
+plt.annotate(r'$2x+1=%s$' % y0, xy=(x0, y0), xycoords='data', xytext=(+30, -30),
+             textcoords='offset points', fontsize=16,
+             arrowprops=dict(arrowstyle='->', connectionstyle="arc3,rad=.2"))
+
+plt.plot([x0, x0,], [0, y0,], 'k--', linewidth=2.5)
+
+
+
 plt.show()
