@@ -2,9 +2,9 @@
 import numpy as np
 import os
 
-file_path1 = r'E:\A_项目\demo\pytorch\demo01\archive\USvideos.csv'
-file_path2 = r'E:\A_项目\demo\pytorch\demo01\archive\GBvideos.csv'
-file_path3 = r'E:\A_项目\demo\pytorch\demo01\archive\test.csv'
+file_path1 = r'/archive/USvideos.csv'
+file_path2 = r'/archive/GBvideos.csv'
+file_path3 = r'/archive/test.csv'
 
 #读取文件
 with open(file_path3, 'r', encoding='utf-8') as f:
